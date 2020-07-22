@@ -1,0 +1,874 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    <style>
+    #panorama {
+        width: 100%;
+        height: 98.5vh;
+    }
+    </style>
+</head>
+<body>
+
+<div id="panorama"></div>
+<script>
+pannellum.viewer('panorama', {   
+    "default": {
+        "firstScene": "bridge",
+        "sceneFadeDuration": 1000,
+        "hotSpotDebug": true,
+        "compass": true,
+        "northOffset": 180,
+        "autoLoad": true,
+    },
+///////////////////////////////////////////////////////
+//BRIDGE///////////////////////////////////////////////
+///////////////////////////////////////////////////////
+    "scenes": {
+        "bridge": {
+            "hfov": 120,
+            "pitch": 0,
+            "yaw": -90,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/G9p4dpW.jpg",
+            "title": "Franxinus's Bridge",
+            "author": "Franxinus",
+            
+            "hotSpots": [
+                {
+                    //Pitch: -13.83640401489301, Yaw: -91.54062597564293, Center Pitch: -16.325902733171812, Center Yaw: -96.45428915185974, HFOV: 120
+                    "pitch": -16.325902733171812,
+                    "yaw": -96.45428915185974,
+                    "type": "scene",
+                    "text": "Commune Entrance",
+                    "sceneId": "CE"
+                },
+                
+                {
+                    //Center Pitch: -2.1123141620779156, Center Yaw: -81.00830358363194
+                    "pitch": -2.1123141620779156,
+                    "yaw": -81.00830358363194,
+                    "type": "scene",
+                    "text": "The Commune",
+                    "sceneId": "TCE"
+                },
+                {
+                    "pitch": -9.747540290325688,
+                    "yaw": 90.32966301299706,
+                    "type": "scene",
+                    "text": "Franxinus Sign",
+                    "sceneId": "FS"
+                },
+                {
+                    "pitch": -1.0939260526876582,
+                    "yaw": -267.0207353301138,
+                    "type": "scene",
+                    "text": "Commune Budget Defense Tower Entrance",
+                    "sceneId": "BDTEntrance"
+                },
+                
+                {
+                    "pitch": -4.927695805734778,
+                    "yaw": -22.63516641355784,
+                    "type": "scene",
+                    "text": "Farm",
+                    "sceneId": "path5"
+                },
+                
+            ]
+        },
+        
+        "FS": {
+            "hfov": 120,
+            "pitch": 0,
+            "yaw": -225,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/J54qAyE.jpg",
+            "title": "Commune Basement",
+            "author":"The Communist",
+            "hotSpots": [
+                {
+                    //Center Pitch: -7.041491569536583, Center Yaw: -289.6260352563797
+                    "pitch": -9.6946301016605,
+                    "yaw": 107.8679719711189,
+                    "type": "scene",
+                    "text": "Budget Defense Tower Entrance",
+                    "sceneId": "BDTEntrance"
+                },
+                {
+                    //Center Pitch: -16.733611126540158, Center Yaw: 89.46647642524431
+                    "pitch": -16.733611126540158,
+                    "yaw": -89.46647642524431,
+                    "type": "scene",
+                    "title": "Franxinus's Bridge",
+                    "author": "Franxinus",
+                },
+            ]
+        },
+///////////////////////////////////////////////////////
+//COMMUNE//////////////////////////////////////////////
+///////////////////////////////////////////////////////
+        "CE": {
+            "title": "Commune Entrance",
+            "author":"The Communist",
+            "hfov": 110,
+            "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/ow5vA8X.jpg",
+            "hotSpots": [
+                {
+                    //Center Pitch: -16.733611126540158, Center Yaw: 89.46647642524431
+                    "pitch": -16.733611126540158,
+                    "yaw": 89.46647642524431,
+                    "type": "scene",
+                    "text": "Bridge",
+                    "sceneId": "bridge",
+                },
+                {
+                    //Center Pitch: -2.1123141620779156, Center Yaw: -81.00830358363194
+                    "pitch": -18.821188852229785,
+                    "yaw": -27.254621097137708,
+                    "type": "scene",
+                    "text": "The Commune",
+                    "sceneId": "TCE"
+                },
+                {
+                    //Center Pitch: -11.072660688342596, Center Yaw: -169.067197155088
+                    "pitch": -5.206420502348543,
+                    "yaw": 90.09020049930952,
+                    "type": "scene",
+                    "text": "Franxinus Sign",
+                    "sceneId": "FS"
+                },
+                {
+                    //Center Pitch: -11.072660688342596, Center Yaw: -169.067197155088
+                    "pitch": -29.963327808434187,
+                    "yaw": 0.7236814106802366,
+                    "type": "scene",
+                    "text": "Path",
+                    "sceneId": "path1"
+                },
+            ]
+        },
+        "TCE": {
+            "hfov": 120,
+            "pitch": 0,
+            "yaw": -180,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/FxEI2Bd.jpg",
+            "title": "Commune Entrance",
+            "author":"The Communist",
+            "hotSpots": [
+                {
+                    //Center Pitch: -7.041491569536583, Center Yaw: -289.6260352563797
+                    "pitch": -9.031052974070956,
+                    "yaw": 71.1267105127715,
+                    "type": "scene",
+                    "text": "Commune Entrance",
+                    "sceneId": "CE"
+                },
+                {
+                    //Center Pitch: -11.072660688342596, Center Yaw: -169.067197155088
+                    "pitch": -11.072660688342596,
+                    "yaw": -169.067197155088,
+                    "type": "scene",
+                    "text": "Commune Chest Area 2",
+                    "sceneId": "TCEChest2"
+                },   
+            ]
+        },
+        "TCEChest2": {
+            "hfov": 120,
+            "pitch": 0,
+            "yaw": -90,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/2v1qaUd.jpg",
+            "title": "Commune Entrance",
+            "author":"The Communist",
+            "hotSpots": [
+                {
+                    //Center Pitch: -7.041491569536583, Center Yaw: -289.6260352563797
+                    "pitch": -7.041491569536583,
+                    "yaw": -289.6260352563797,
+                    "type": "scene",
+                    "text": "Commune Entrance",
+                    "sceneId": "CE"
+                },
+                {
+                    //Center Pitch: -7.041491569536583, Center Yaw: -289.6260352563797
+                    "pitch": -16.19650815484816,
+                    "yaw": -345.3402969240462,
+                    "type": "scene",
+                    "text": "Commune Chest Area 1",
+                    "sceneId": "TCE"
+                },
+                {
+                    //-54.540965530231475, Center Yaw: 171.79857372874528
+                    "pitch": -54.540965530231475,
+                    "yaw": 171.79857372874528,
+                    "type": "scene",
+                    "text": "Basement",
+                    "sceneId": "TCBasement"
+                },
+                {
+                    //Center Pitch: 19.286812840604057, Center Yaw: 169.53778081519818
+                    "pitch": 19.286812840604057,
+                    "yaw": 169.53778081519818,
+                    "type": "scene",
+                    "text": "Floor 1",
+                    "sceneId": "TCFloor1"
+                },
+                {
+            "pitch": -42.5815832039005,
+            "yaw": 80.57758263173984,
+            "type": "info",
+            "text": "Communist Bed \n A place where everyone sleep together",
+            "URL": ""
+        },
+                
+            ]
+        },
+        
+        "TCBasement": {
+            "hfov": 120,
+            "pitch": 0,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/k9b6EKr.jpg",
+            "title": "Commune Basement",
+            "author":"The Communist",
+            "hotSpots": [
+                {
+                    //Center Pitch: 19.286812840604057, Center Yaw: 169.53778081519818
+                    "pitch": 77.43315761107407,
+                    "yaw": -184.9116072403853,
+                    "type": "scene",
+                    "text": "Commune Chest Area 2",
+                    "sceneId": "TCEChest2"
+                },
+            ]
+        },
+        
+        "TCFloor1": {
+            "hfov": 120,
+            "pitch": 0,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/rT2PRA3.jpg",
+            "title": "Commune Basement",
+            "author":"The Communist",
+            "hotSpots": [
+                {
+                    //Center Pitch: -7.041491569536583, Center Yaw: -289.6260352563797
+                    "pitch": -69.19942130453076,
+                    "yaw": -3.1578491173475793,
+                    "type": "scene",
+                    "text": "Commune Chest Area 2",
+                    "sceneId": "TCEChest2"
+                },
+                {
+                    //Center Pitch: 19.286812840604057, Center Yaw: 169.53778081519818
+                    "pitch": 88.63252936078189,
+                    "yaw": 167.21554550570207,
+                    "type": "scene",
+                    "text": "Spires",
+                    "sceneId": "TCTop"
+                },
+            ]
+        },
+        
+        "TCTop": {
+            "hfov": 120,
+            "pitch": -45,
+            "yaw": 45,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/1l3Ws7y.jpg",
+            "title": "Commune Basement",
+            "author":"The Communist",
+            "hotSpots": [
+                {
+                    "pitch": -90,
+                    "yaw": -186.47068443798196,
+                    "type": "scene",
+                    "text": "Floor 1",
+                    "sceneId": "TCFloor1"
+                },
+                {
+                    "pitch": -30.894405057431168,
+                    "yaw": 61.143074780275434,
+                    "type": "scene",
+                    "text": "BDTG Spire",
+                    "sceneId": "BDTGTop"
+                },
+            ]
+        },
+///////////////////////////////////////////////////////
+//BDT//////////////////////////////////////////////////
+///////////////////////////////////////////////////////
+        "BDTEntrance": {
+            "hfov": 120,
+            "pitch": 0,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/nEohX0Q.jpg",
+            "title": "Commune Budget Defense Tower Entrance",
+            "author":"T-CORP Project",
+            "hotSpots": [
+                {
+                    "pitch": -16.19210982130614,
+                    "yaw": 0.659281645024673,
+                    "type": "scene",
+                    "text": "Commune Budget Defense Tower",
+                    "sceneId": "BDTG1"
+                },
+
+        {
+                    "pitch": -34.81057447131158,
+                    "yaw": -64.57086061887418,
+                    "type": "scene",
+                    "text": "Franxinus Sign",
+                    "sceneId": "FS"
+                },
+                {
+                    "pitch": -17.151332120871892,
+                    "yaw": -79.3671924904805,
+                    "type": "scene",
+                    "text": "Bridge",
+                    "sceneId": "bridge",
+                },
+                
+                ]
+        },
+    
+        
+        "BDTG1": {
+            "hfov": 120,
+            "pitch": 0,
+            "yaw": 45,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/2H5hah2.jpg",
+            "title": "Commune Budget Defense Tower Ground Floor",
+            "author":"T-CORP Project",
+            "hotSpots": [
+                {
+                    "pitch": 35.49326862671937,
+                    "yaw": 32.82329920820505,
+                    "type": "scene",
+                    "text": "Floor 1",
+                    "sceneId": "BDTGFloor1"
+                },
+                {
+                    "pitch": -18.879584953983944,
+                    "yaw": 54.75108590960162,
+                    "type": "scene",
+                    "text": "Back",
+                    "sceneId": "BDTG2"
+                },
+                {
+                    "pitch": -34.4680039941794,
+                    "yaw": 164.73395631364298,
+                    "type": "scene",
+                    "text": "Outside",
+                    "sceneId": "BDTEntrance"
+                },
+            ]
+        },
+    
+        "BDTG2": {
+            "hfov": 120,
+            "pitch": 0,
+            "yaw": 220,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/IwyOD9E.jpg",
+            "title": "Commune Budget Defense Tower Ground Floor",
+            "author":"T-CORP Project",
+            "hotSpots": [
+                {
+                    "pitch": -19.324145137448674,
+                    "yaw": 209.89237833491586,
+                    "type": "scene",
+                    "text": "Front",
+                    "sceneId": "BDTG1"
+                },
+            ]
+        },
+    
+        "BDTGFloor1": {
+            "hfov": 120,
+            "pitch": 62,
+            "yaw": 94,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/Ez2UUku.jpg",
+            "title": "Commune Budget Defense Tower Floor 1",
+            "author":"T-CORP Project",
+            "hotSpots": [
+                {
+                    "pitch": -90,
+                    "yaw": 90.97571636853884,
+                    "type": "scene",
+                    "text": "Ground Floor",
+                    "sceneId": "BDTG1"
+                },
+                {
+                    "pitch": 90,
+                    "yaw": 93.12856384443728,
+                    "type": "scene",
+                    "text": "Spire",
+                    "sceneId": "BDTGTop"
+                },
+            ]
+        },
+    
+        "BDTGTop": {
+            "hfov": 120,
+            "pitch": -45,
+            "yaw": -50,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/EGLB0WP.jpg",
+            "title": "Commune Budget Defense Tower Spire",
+            "author":"T-CORP Project",
+            "hotSpots": [
+                {
+                    "pitch": -74.91163744257122,
+                    "yaw": 95.01030110246715,
+                    "type": "scene",
+                    "text": "Floor 1",
+                    "sceneId": "BDTGFloor1"
+                },
+                {
+                    "pitch": -67.6895460674822,
+                    "yaw": -119.16853435590303,
+                    "type": "scene",
+                    "text": "Bridge",
+                    "sceneId": "bridge"
+                },
+                {
+                    "pitch": -21.796443852577866,
+                    "yaw": -29.068481510026164,
+                    "type": "scene",
+                    "text": "Farm",
+                    "sceneId": "path5"
+                },
+            ]
+        },
+///////////////////////////////////////////////////////
+//Pathway//////////////////////////////////////////////
+///////////////////////////////////////////////////////
+"path1": {
+            "hfov": 120,
+            "pitch": 0,
+            "yaw": -90,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/rmzOZoy.jpg",
+            "title": "Walkway",
+            "author":"The Communist",
+            "hotSpots": [
+                {
+                    "pitch": 25.495158074260527,
+                    "yaw": -180.12880364249133,
+                    "type": "scene",
+                    "text": "Commune Entrance",
+                    "sceneId": "CE"
+                },
+                {
+                    "pitch": -5.260872231506681,
+                    "yaw": -88.92407251377486,
+                    "type": "scene",
+                    "text": "Path",
+                    "sceneId": "path2"
+                },
+                
+            ]
+        },
+"path2": {
+            "hfov": 120,
+            "pitch": 0,
+            "yaw": -45,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/GDOEKkg.jpg",
+            "title": "Walkway",
+            "author":"The Communist",
+            "hotSpots": [
+                {
+                    "pitch": -9.454892332580188,
+                    "yaw": -40.43208401777284,
+                    "type": "scene",
+                    "text": "Bunker Entrance",
+                    "sceneId": "lbe"
+                },
+                {
+                    "pitch": -5.9792333303828284,
+                    "yaw": 94.12056137044894,
+                    "type": "scene",
+                    "text": "Path",
+                    "sceneId": "path1"
+                },
+                {
+                    "pitch": 4.251515252888376,
+                    "yaw": 1.6131601495129417,
+                    "type": "scene",
+                    "text": "Path",
+                    "sceneId": "path3"
+                },
+                
+            ]
+        },
+"lbe": {
+            "hfov": 120,
+            "pitch": 0,
+            "yaw": -180,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/qQKc9z2.jpg",
+            "title": "Bunker Entrance",
+            "author":"Lychwee",
+            "hotSpots": [
+                {
+                    "pitch": -7.238022436911035,
+                    "yaw": 182.7381491957194,
+                    "type": "scene",
+                    "text": "Bunker",
+                    "sceneId": "be"
+                },
+                {
+                    "pitch": -5.694918517260772,
+                    "yaw": 135.32629294511332,
+                    "type": "scene",
+                    "text": "Path",
+                    "sceneId": "path2"
+                },
+            ]
+        },
+        
+        "be": {
+            "hfov": 120,
+            "pitch": 0,
+            "yaw": -90,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/aRXsnUy.jpg",
+            "title": "Bunker",
+            "author":"Lychwee",
+            "hotSpots": [
+                {
+                    "pitch": -3.595868137889072,
+                    "yaw": 3.1490790775439987,
+                    "type": "scene",
+                    "text": "Exit",
+                    "sceneId": "lbe"
+                },
+                {
+                    "pitch": -6.735667415665751,
+                    "yaw": -91.35797242121606,
+                    "type": "scene",
+                    "text": "Secret Room",
+                    "sceneId": "sr"
+                },
+            ]
+        },
+        
+        "sr": {
+            "hfov": 120,
+            "pitch": 0,
+            "yaw": -90,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/lyBc97D.jpg",
+            "title": "Secret Room",
+            "author":"Lychwee",
+            "hotSpots": [
+                {
+                    "pitch": -13.164335655294947,
+                    "yaw": 86.96991876083844,
+                    "type": "scene",
+                    "text": "Bunker",
+                    "sceneId": "be"
+                },
+            ]
+        },
+"path3": {
+            "hfov": 120,
+            "pitch": 0,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/v6Kq6Wg.jpg",
+            "title": "Walkway",
+            "author":"The Communist",
+            "hotSpots": [
+                {
+                    "pitch": -14.186288450950654,
+                    "yaw": 2.2727723350892433,
+                    "type": "scene",
+                    "text": "Path",
+                    "sceneId": "path4"
+                },
+                {
+                    "pitch": -9.98214278843939,
+                    "yaw": 0.9371406319066669,
+                    "type": "scene",
+                    "text": "Path",
+                    "sceneId": "path5"
+                },
+                {
+                    "pitch": -11.494748410553248,
+                    "yaw": 181.68123593588876,
+                    "type": "scene",
+                    "text": "Path",
+                    "sceneId": "path2"
+                },
+            ]
+        },
+
+"path4": {
+            "hfov": 120,
+            "pitch": 0,
+            "yaw": -45,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/hNYE3Qh.jpg",
+            "title": "Walkway",
+            "author":"The Communist",
+            "hotSpots": [
+                {
+                    "pitch": 4.2277779074339845,
+                    "yaw": 179.60987779838158,
+                    "type": "scene",
+                    "text": "Path",
+                    "sceneId": "path3"
+                },
+                {
+                    "pitch": -15.267027624548358,
+                    "yaw": -1.4397421723635073,
+                    "type": "scene",
+                    "text": "Path",
+                    "sceneId": "path5"
+                },
+                {
+                    "pitch": -33.88273602349473,
+                    "yaw": 120.09908672295734,
+                    "type": "scene",
+                    "text": "Building",
+                    "sceneId": "building1"
+                },
+                {
+                    "pitch": -4.878520531523473,
+                    "yaw": 277.9147403333497,
+                    "type": "scene",
+                    "text": "Sugar Cane Farm",
+                    "sceneId": "pathsc"
+                },
+            ]
+        },
+        
+"pathsc": {
+            "hfov": 120,
+            "pitch": 0,
+            "yaw": 225,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/1srHzLb.jpg",
+            "title": "Walkway",
+            "author":"The Communist",
+            "hotSpots": [
+                {
+                    "pitch": -16.902045955854323,
+                    "yaw": 89.74172216695447,
+                    "type": "scene",
+                    "text": "Path",
+                    "sceneId": "path4"
+                },
+            ]
+        },
+"path5": {
+            "hfov": 120,
+            "pitch": 0,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/xqEIFnT.jpg",
+            "title": "Walkway",
+            "author":"The Communist",
+            "hotSpots": [
+                {
+                    "pitch": -10.762032850415004,
+                    "yaw": 176.08068830625257,
+                    "type": "scene",
+                    "text": "Path",
+                    "sceneId": "path4"
+                },
+                {
+                    "pitch": 1.092275292363841,
+                    "yaw": 179.3074691952416,
+                    "type": "scene",
+                    "text": "Path",
+                    "sceneId": "path3"
+                },
+                {
+                    "pitch": 0.143961532335956,
+                    "yaw": 25.06451006837309,
+                    "type": "scene",
+                    "text": "Granary",
+                    "sceneId": "building2"
+                },
+                {
+                    "pitch": -8.097636928775009,
+                    "yaw": -48.49885622017857,
+                    "type": "scene",
+                    "text": "Sayaka's Doortress Entrance",
+                    "sceneId": "SDE"
+                },
+                {
+                    "pitch": -17.443206662365366,
+                    "yaw": 89.94101008451936,
+                    "type": "scene",
+                    "text": "Path",
+                    "sceneId": "pathbeet1"
+                },
+                {
+                    "pitch": 16.156759239371308,
+                    "yaw": 149.68100633517327,
+                    "type": "scene",
+                    "text": "BDTG Spire",
+                    "sceneId": "BDTGTop"
+                },
+            ]
+        },
+"pathbeet1": {
+            "hfov": 120,
+            "pitch": 0,
+            "yaw": -180,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/DokIucj.jpg",
+            "title": "Walkway",
+            "author":"The Communist",
+            "hotSpots": [
+                {
+                    "pitch": -22.21959936598676,
+                    "yaw": -83.46139199855864,
+                    "type": "scene",
+                    "text": "Path 5",
+                    "sceneId": "path5"
+                },
+                {
+                    "pitch": -8.946250443665658,
+                    "yaw": 179.2454989626126,
+                    "type": "scene",
+                    "text": "Path",
+                    "sceneId": "pathbeet2"
+                },
+            ]
+        },
+        
+"pathbeet2": {
+            "hfov": 120,
+            "pitch": 0,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/8szTJqb.jpg",
+            "title": "Walkway",
+            "author":"The Communist",
+            "hotSpots": [
+                {
+                    "pitch": -7.519108523184721,
+                    "yaw": -0.3559544333426077,
+                    "type": "scene",
+                    "text": "Path",
+                    "sceneId": "pathbeet1"
+                },
+            ]
+        },
+        
+
+"building1": {
+            "hfov": 120,
+            "pitch": 90,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/f2sxeB4.jpg",
+            "title": "Building",
+            "author":"The Communist",
+            "hotSpots": [
+                {
+                    "pitch": -22.604728330751165,
+                    "yaw": 270.3750253407312,
+                    "type": "scene",
+                    "text": "Path",
+                    "sceneId": "path5"
+                },
+            ]
+        },
+"building2": {
+            "hfov": 120,
+            "pitch": 0,
+            "yaw": 270,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/MIPFV9N.jpg",
+            "title": "Granary",
+            "author":"The Communist",
+            "hotSpots": [
+                {
+                    "pitch": -10.031583648902231,
+                    "yaw": -91.0302343455506,
+                    "type": "scene",
+                    "text": "Path",
+                    "sceneId": "path5"
+                },
+            ]
+        },
+        
+"SDE": {
+            "hfov": 120,
+            "pitch": 0,
+            "yaw": -45,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/YrdGDKJ.jpg",
+            "title": "Doortress Entrance",
+            "author":"Sayaka",
+            "hotSpots": [
+                {
+                    "pitch": 3.408523235831667,
+                    "yaw": 125.996120814127,
+                    "type": "scene",
+                    "text": "Path",
+                    "sceneId": "path5"
+                },
+                {
+                    "pitch": -8.174399209286833,
+                    "yaw": -59.329678008777776,
+                    "type": "scene",
+                    "text": "Sayaka's Doortress",
+                    "sceneId": "SD"
+                },
+                {
+                    "pitch": 12.897234404108543,
+                    "yaw": 144.61921210451433,
+                    "type": "scene",
+                    "text": "BDTG Spire",
+                    "sceneId": "BDTGTop"
+                },
+            ]
+        },
+
+"SD": {
+            "hfov": 120,
+            "pitch": 0,
+            "yaw": -180,
+            "type": "equirectangular",
+            "panorama": "https://i.imgur.com/3xwIHMN.jpg",
+            "title": "Doortress",
+            "author":"Sayaka",
+            "hotSpots": [
+                {
+                    "pitch": -22.10756573621859,
+                    "yaw": -182.65587559893444,
+                    "type": "scene",
+                    "text": "Exit",
+                    "sceneId": "SDE"
+                },
+            ]
+        },
+    }
+});
+</script>
+
+</body>
+</html>
